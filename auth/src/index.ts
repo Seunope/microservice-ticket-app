@@ -17,7 +17,7 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false,
-    secure: true
+    secure: true,
   })
 );
 
@@ -38,11 +38,7 @@ const start = async () => {
   }
 
   try {
-    await mongoose.connect('mongodb://auth-mongo-srv:27017/auth', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true
-    });
+    await mongoose.connect('mongodb://auth-mongo-srv:27017/auth');
     console.log('Connected to MongoDb');
   } catch (err) {
     console.error(err);
