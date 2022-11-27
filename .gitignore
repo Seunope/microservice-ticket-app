@@ -5,9 +5,10 @@
 /auth/node_modules
 /paymnets/node_modules
 /order/node_modules
-/ticket/node_modules
 /common/node_modules
 /client/node_modules
+/tickets/node_modules
+
 
 /.pnp
 .pnp.js
